@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+      <div class="navbar">
+          <div class="logo"><h1>Robert Hooker</h1></div>
+          <div class="links">
+              <li class="home"><a href="#hero">Home</a></li>
+              <li class="Portfolio"><a href="#work">Projects</a></li>
+              <li class="About"><a href="#about">About</a></li>
+              <li class="Contact"><a href="#contact">Contact</a></li>
+              <li class="LinkedIn"><span class="fa-li"></span><a href="https://www.linkedin.com/in/robert-hooker-19b27a259/ "target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in" style="color:#0077b5;"></i></a></li>
+          </div>
+          <div class="menu"><ion-icon name="menu-outline"></ion-icon></div>
+      </div>
+
+			<div class="side-bar">
+        <div class="backdrop"></div>
+        <div class="side-menu">
+          <div class="close-btn"><ion-icon name="close"></ion-icon></div>
+          <li data-link="#hero">Home</li>
+          <li data-link="#work">Projects</li>
+          <li data-link="#about">About</li>
+          <li data-link="#contact">Contact</li>
+        </div>
+      </div>
+    </header>
+
+		<section class="hero" id="hero">
+      <div class="left">
+        <img src="/img/IMG_8198.jpg" alt="" />
+      </div>
+      <div class="right">
+        <div class="info">
+          <h1>Welcome</h1>
+          <p>Thank you for coming to my website! I am Robby and this humble site serves as my personal portfolio and will hopefully one day house records of my achievments in computer science!
+            I also plan on having a page on this site dedicated to random things that allure me, if you're into that sort of thing. Feel free to email me via the 'contact' section and I will get back to you:)
+          </p>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="work gradient-bg">
+      <div class="container">
+        <h1>Projects</h1>
+        <p class="project_p"> Below are projects that I feel represent my passions, interests, and experience in computer science and beyond. </p>
+
+        <div class="cards">
+          <div class="card">
+              <h2>NYC Real Estate</h2>
+              <p>This is a data science <br> project I did analyzing the <br> rolling real estate sales in <br>New York City. It includes cleaning, eda, modeling <br> and visualization. 
+              The <br>code is written in python <br>with many helpful libraries, especially pandas.</p>
+              <form action="https://github.com/robbyhooker/ds_nyc_apartments" method="get" target="_blank">
+                <button type="submit"class="outline-btn">more</button>
+              </form>
+          </div>
+
+          <div class="card">
+              <h2>UM Energy Analysis</h2>
+              <p>This is a data analysis <br>project which I carried out for the University of <br>Mississippi. Using campus energy 
+                usage information my report and analysis <br>in python provides <br>visualizations and <br>suggestions for the school. 
+              </p>
+              <form action="https://github.com/robbyhooker/UM-Enregy-Conservation" method="get" target="_blank">
+                <button type="submit"class="outline-btn">more</button>
+              </form>
+          </div>
+
+          <div class="card">
+              <h2>Algorithmic Trading</h2>
+              <p>Following free code camp's algorithmic trading course I created multiple equal <br>weight S&P 500 funds <br>based on various <br>algorithmic trading <br>strategies.
+                The code is done in python and uses api <br>calls from IEX cloud.<br> </p>
+              <form action="https://github.com/robbyhooker/Algorithmic-Trading-Course" method="get" target="_blank">
+                <button type="submit"class="outline-btn">more</button>
+              </form>
+          </div>
+
+          <div class="card">
+              <h2>Title</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+              praesentium commodi, officiis nam laboriosam earum facilis nostrum
+              soluta, in doloribus repellat nesciunt similique tempora minima
+              rerum molestiae ratione voluptatum illo!</p>
+              <form action="https://github.com/robbyhooker/Algorithmic-Trading-Course" method="get" target="_blank">
+                <button type="submit"class="outline-btn">more</button>
+              </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about-me">
+      <div class="container">
+        <div class="left">
+          <h1>About Me</h1>
+          <p class="about-p">I am currently a junior at the University of Mississippi pursuing a Bachelor of Science in Computer Science. My minor is Economics and I'm interested in data science, 
+            quantitative research, quantitiative finance, and machine learning.</p>
+          <p class="about-p">Outside of my personal studies I find myself provoked by other fields, arts, people, and ideas, so I often try incorporate them in my personal projects.</p>
+          <p class="about-p">I am set to graduate in May 2024 and plan to start my career or pursue graduate school!</p>
+        </div>
+        <div class="right">
+          <img src="/img/University_of_Mississippi_seal.svg.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact gradient-bg2">
+      <h1>Contact Me</h1>
+        <div class="container">
+          <form action="https://formsubmit.co/116b2accdbf423201dcabb7ac0a40bff" method="POST">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/thankyou.html">
+            <textarea name="message" placeholder="Message" required></textarea>
+            <div><button type="submit" class="contact-btn">Send</button></div>
+          </form>
+        </div>
+    </section>
+
+		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
