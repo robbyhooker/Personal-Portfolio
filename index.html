@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
     <link rel="icon" href="img/icons8-ruby-programming-language-16.png" type="image/x-icon"/>
+    <link href="https://fonts.cdnfonts.com/css/cascadia-code" rel="stylesheet">
 </head>
 <body id="page1">
   <header>
@@ -40,15 +41,12 @@
     </header>
 
 		<section class="hero" id="hero">
-      <div class="left">
-        <img src="img/IMG_8198.jpg" alt="" />
-      </div>
       <div class="right">
         <div class="info">
-          <h1>Welcome</h1>
-          <p>Thank you for coming to my website! I am Robby and this site serves as my personal portfolio and will hopefully one day house records of my achievments in computer science!
-            Feel free to email me via the 'contact' section and I will get back to you. 
-          </p>
+          <div class="typing-container" id="typing-container">
+            <p id="text-to-type">Thank you for coming to my website! This site serves as my personal portfolio and houses records of my work in computer science:) Feel free to email me via the 'contact' section and I will get back to you. 
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -56,13 +54,11 @@
     <section id="work" class="work gradient-bg">
       <div class="container">
         <h1>Projects</h1>
-        <p class="project_p"> Below are projects that I feel represent my passions, interests, and experience in computer science and beyond. </p>
-
         <div class="cards">
           <div class="card">
               <h2>NYC Real Estate</h2>
-              <p>This is a data science <br> project I did analyzing the <br> rolling real estate sales in <br>New York City. It includes cleaning, eda, modeling <br> and visualization. 
-              The <br>code is written in python <br>with many helpful libraries, especially pandas.</p>
+              <p>This is a data science project I did analyzing the rolling real estate sales in New York City. It includes cleaning, eda, modeling and visualization. 
+              The code is written in python with many helpful libraries, especially pandas.</p>
               <form action="https://github.com/robbyhooker/ds_nyc_apartments" method="get" target="_blank">
                 <button type="submit"class="outline-btn">more</button>
               </form>
@@ -70,8 +66,8 @@
 
           <div class="card">
               <h2>UM Energy Analysis</h2>
-              <p>This is a data analysis <br>project which I carried out for the University of <br>Mississippi. Using campus energy 
-                usage information my report and analysis <br>in python provides <br>visualizations and <br>suggestions for the school. 
+              <p>This is a data analysis project which I carried out for the University of Mississippi. Using campus energy 
+                usage information my report and analysis in python provides visualizations and suggestions for the school. 
               </p>
               <form action="https://github.com/robbyhooker/UM-Enregy-Conservation" method="get" target="_blank">
                 <button type="submit"class="outline-btn">more</button>
@@ -80,7 +76,7 @@
 
           <div class="card">
               <h2>Climate Analysis</h2>
-              <p>Analysis on global, city, <br>and country level <br>temperature data. Analysis includes visualizations to <br>help build intuition, and an ARIMA regression model.<br> 
+              <p>Analysis on global, city, and country level temperature data. Analysis includes visualizations to help build intuition, and an ARIMA regression model. 
                 This analysis was solely for personal understanding and exploratory purposes. 
               </p>
               <form action="https://github.com/robbyhooker/Earth-Temperature-Analysis" method="get" target="_blank">
@@ -90,8 +86,8 @@
 
           <div class="card">
               <h2>This Website!</h2>
-              <p>This website is some of my first experience with web <br>dev and I am excited to <br>continue to add to it. It is <br>written in HTML, CSS, <br>and JavaScript. 
-              It contains a functional navbar and <br>contact section, on top of <br>being responsive.</p>
+              <p>This website is some of my first experience with web dev and I am excited to continue to add to it. It is written in HTML, CSS, and JavaScript. 
+              It contains a functional navbar and contact section, on top of being responsive. Click 'more' to see code!</p>
               <form action="https://github.com/robbyhooker/Personal-Portfolio" method="get" target="_blank">
                 <button type="submit"class="outline-btn">more</button>
               </form>
@@ -101,18 +97,15 @@
     </section>
 
     <section id="about" class="about-me">
-      <div class="container">
+        <h1>About Me</h1>
+        <div class="about-container">
         <div class="left">
-          <h1>About Me</h1>
           <p class="about-p">I am currently a Senior at the University of Mississippi pursuing a Bachelor of Science in Computer Science. My minor is Economics and I'm interested in data science, 
-            quantitative research, quantitiative finance, and machine learning.</p>
-          <p class="about-p">Outside of my personal studies I find myself provoked by other fields, arts, people, and ideas, so I often try incorporate them in my personal projects.</p>
+            quantitative research, and machine learning.</p>
+          <p class="about-p">Outside of my personal studies, I am provoked by other fields, arts, people, and ideas, so I often try incorporate them in my personal projects.</p>
           <p class="about-p">I am set to graduate in May 2024 and plan to start my career or attend graduate school!</p>
-        </div>
-        <div class="right">
-          <img src="img/University_of_Mississippi_seal.svg.png" alt="" />
-        </div>
       </div>
+        </div>
     </section>
 
     <section id="contact" class="contact gradient-bg2">

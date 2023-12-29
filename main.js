@@ -36,5 +36,29 @@ function closeSidebar(){
     sideBar.classList.remove('open')
     setTimeout(() => {
         backdrop.style.display = 'none'
-    }, 500);
+    }, 100);
 }
+document.addEventListener('DOMContentLoaded', function () {
+    var textToType = document.getElementById('text-to-type').innerText;
+    var words = textToType.split(/\s+/);
+
+    var typingContainer = document.getElementById('typing-container');
+    typingContainer.innerHTML = ''; // Clear the initial text
+
+    typeText(words, 0, typingContainer);
+
+    function typeText(words, index, container) {
+      if (index < words.length-1) {
+        container.innerText += words[index] + ' ';
+
+        // Add a line break after each sentence, excluding the last period
+        if (words[index].includes('.') && index < words.length - 1) {
+          container.innerHTML += '<br>';
+        }
+
+        setTimeout(function () {
+          typeText(words, index+1, container);
+        }, 75); // Adjust the delay for typing speed
+      }
+    }
+  });
