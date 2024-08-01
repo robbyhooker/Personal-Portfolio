@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robert Hooker's Portfolio</title>
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" href="r.png" type="image/x-icon" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.dom.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.easycam.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.typekit.net/pwx4lgt.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+</head>
+
+<body class="main">
+  <header>
+    <nav class="navbar">
+      <h3 class="nav-logo">R</h3>
+      <ul class="navbar-menu">
+        <li class="navbar-item"><a href="index.html">Home</a></li>
+        <li class="navbar-item"><a href="blog-list.html">Blog</a></li>
+        <li class="navbar-item"><a href="project-list.html">Projects</a></li>
+        <li class="navbar-item"><a href="resume.html">Resume</a></li>
+        <li class="navbar-item"><span class="fa-li"></span><a
+            href="https://www.linkedin.com/in/robert-hooker-19b27a259/ " target="_blank" rel="noopener noreferrer"><i
+              class="fa-brands fa-linkedin-in" style="color:#057af6;"></i></a></li>
+        <li class="navbar-item"><a href="https://github.com/robbyhooker" target="_blank" rel="noopener noreferrer"><i
+              class="fa-brands fa-github" style="color:#000000;"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="intro-section">
+    <p id="description">I'm Robert Hooker, a 22 year old<br>I enjoy learning, researching, and building<br>I have a BS in
+      Computer Science with a minor in Economics<br>Please check out my projects and blog to see what I've been up
+      to<br>I have an affinity towards topics of large scope and scale<br>Thank you for visiting my website!</p>
+    <div id="p5-canvas"></div>
+  </div>
+  <div class="projects-header" id="work">
+    <h2 class="lines">WORK</h2>
+  </div>
+  <div class="project-carousel">
+    <div class="project-item" onclick="location.href='project_display.html?id=post1';">
+      <img src="assets/project4.png" alt="Project 4">
+      <h3 class="project4">Finance Portfolio Optimization Methods</h3>
+    </div>
+    <div class="project-item" onclick="location.href='project_display.html?id=post2';">
+      <img src="assets/project1.png" alt="Project 1">
+      <h3 class="project1">Classification for Conservation</h3>
+    </div>
+    <div class="project-item" onclick="location.href='project_display.html?id=post3';">
+      <img src="assets/f1.jpg" alt="Project 5">
+      <h3 class="project5">Formula 1 Exploratory</h3>
+    </div>
+    <div class="project-item" onclick="location.href='dashboard.html';">
+      <img src="assets/project3.jpg" alt="Project 3">
+      <h3 class="project3">Macro Indicator Dashboard</h3>
+    </div>
+    <div class="project-item" onclick="location.href='project_display.html?id=post5';">
+      <img src="assets/project2.png" alt="Project 2">
+      <h3 class="project2">Climate Analysis</h3>
+    </div>
+    <div class="project-item" onclick="location.href='project_display.html?id=post6';">
+      <img src="assets/project6.jpg" alt="Project 2">
+      <h3 class="project3">Credit Risk Modeling</h3>
+    </div>
+
+  </div>
+  <div class="blog-header" id="blog">
+    <h2 class="lines2">BLOG</h2>
+  </div>
+  <div class="wrapper">
+    <div class="grid1" onclick="location.href='blog-template.html?id=post1';">
+      <div class="title-overlay">
+        <h2>French Open 2024</h2>
+        <h4>July 5, 2024</h4>
+      </div>
+    </div>
+    <div class="grid2" onclick="location.href='blog-template.html?id=post3';">
+      <div class="title-overlay">
+        <h2>Chicago Architecture Tour</h2>
+        <h4>July 31, 2024</h4>
+      </div>
+    </div>
+    <div class="grid3" onclick="location.href='blog-template.html?id=post2';">
+      <div class="title-overlay">
+        <h2>On the Financialization of Housing</h2>
+        <h4>July 24, 2024</h4>
+      </div>
+    </div>
+    <div class="grid4" onclick="location.href='blog-template.html?id=post4';">
+      <div class="title-overlay">
+        <h2>A People's History of the United States: Chapter Notes</h2>
+        <h4>Updated July 22, 2024</h4>
+      </div>
+    </div>
+    <div class="grid5" onclick="location.href='blog-template.html?id=post5';">
+      <div class="title-overlay">
+        <h2>John Maynard Keynes short bio</h2>
+        <h4>April 16, 2024</h4>
+      </div>
+    </div>
+    <div class="grid6" onclick="location.href='blog-template.html?id=post6';">
+      <div class="title-overlay">
+        <h2>AGI Outlook, thoughts</h2>
+        <h4>August 1, 2024</h4>
+      </div>
+    </div>
+    <div class="grid7" onclick="location.href='blog-template.html?id=post7';">
+      <div class="title-overlay">
+        <h2>1984 and The Individual</h2>
+        <h4>July 3, 2024</h4>
+      </div>
+    </div>
+    <div class="grid8" onclick="location.href='blog-template.html?id=post8';">
+      <div class="title-overlay">
+        <h2>Inspiration from Alexander the Great</h2>
+        <h4>July 15, 2024</h4>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-bottom">
+      <p>2024 Robert Hooker</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="tile.js"></script>
+</body>
+
+</html>
