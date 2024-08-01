@@ -267,7 +267,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Fetch and plot data for GDP as an example
-  d3.json("http://127.0.0.1:5000/api/gdp")
+  d3.json("https://seal-app-scm6d.ondigitalocean.app/api/gdp")
     .then((data) => {
       const parsedData = data.map((d) => ({
         date: new parseDateUTC(d.date),
@@ -278,7 +278,7 @@ document.addEventListener("DOMContentLoaded", function () {
     .catch((error) => console.error("Error loading data:", error));
 
   // Repeat similar steps for other indicators using their respective API endpoints
-  d3.json("http://127.0.0.1:5000/api/unemployment")
+  d3.json("https://seal-app-scm6d.ondigitalocean.app/api/unemployment")
     .then((data) => {
       const parsedData = data.map((d) => ({
         date: new parseDateUTC(d.date),
@@ -294,7 +294,7 @@ document.addEventListener("DOMContentLoaded", function () {
     })
     .catch((error) => console.error("Error loading data:", error));
 
-  d3.json("http://127.0.0.1:5000/api/inflation")
+  d3.json("https://seal-app-scm6d.ondigitalocean.app/api/inflation")
     .then((data) => {
       const parsedData = data.map((d) => ({
         date: new Date(d.date),
@@ -310,7 +310,7 @@ document.addEventListener("DOMContentLoaded", function () {
     })
     .catch((error) => console.error("Error loading data:", error));
 
-  d3.json("http://127.0.0.1:5000/api/interest-rates")
+  d3.json("https://seal-app-scm6d.ondigitalocean.app/api/interest-rates")
     .then((data) => {
       const parsedData = data.map((d) => ({
         date: new Date(d.date),
@@ -326,7 +326,7 @@ document.addEventListener("DOMContentLoaded", function () {
     })
     .catch((error) => console.error("Error loading data:", error));
 
-  d3.json("http://127.0.0.1:5000/api/sp500")
+  d3.json("https://seal-app-scm6d.ondigitalocean.app/api/sp500")
     .then((data) => {
       const parsedData = data.map((d) => ({
         date: new Date(d.date),
@@ -342,7 +342,7 @@ document.addEventListener("DOMContentLoaded", function () {
     })
     .catch((error) => console.error("Error loading data:", error));
 
-  d3.json("http://127.0.0.1:5000/api/exchange-rates")
+  d3.json("https://seal-app-scm6d.ondigitalocean.app/api/exchange-rates")
     .then((data) => {
       const parsedData = data.map((d) => ({
         date: new Date(d.date),
