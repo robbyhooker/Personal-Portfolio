@@ -273,7 +273,7 @@ document.addEventListener("DOMContentLoaded", function () {
         date: new parseDateUTC(d.date),
         value: +d.value,
       }));
-      createLineChart(parsedData, "#gdp-chart", "GDP ($)", "blue", "$");
+      createLineChart(parsedData, "#gdp-chart", "GDP ($)", "navy", "$");
     })
     .catch((error) => console.error("Error loading data:", error));
 
@@ -288,7 +288,7 @@ document.addEventListener("DOMContentLoaded", function () {
         parsedData,
         "#unemployment-chart",
         "Unemployment (%)",
-        "red",
+        "Crimson",
         "%"
       );
     })
@@ -304,7 +304,7 @@ document.addEventListener("DOMContentLoaded", function () {
         parsedData,
         "#inflation-chart",
         "Inflation (%)",
-        "green",
+        "SeaGreen",
         "%"
       );
     })
@@ -320,7 +320,7 @@ document.addEventListener("DOMContentLoaded", function () {
         parsedData,
         "#interest-rates-chart",
         "Interest Rates (%)",
-        "purple",
+        "AliceBlue",
         "%"
       );
     })
@@ -351,8 +351,8 @@ document.addEventListener("DOMContentLoaded", function () {
       createLineChart(
         parsedData,
         "#exchange-rates-chart",
-        "Exchange Rate (USD)",
-        "brown",
+        "USD/EUR",
+        "LightSeaGreen",
         "$"
       );
     })
