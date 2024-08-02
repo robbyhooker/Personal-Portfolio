@@ -320,7 +320,7 @@ document.addEventListener("DOMContentLoaded", function () {
         parsedData,
         "#interest-rates-chart",
         "Interest Rates (%)",
-        "AliceBlue",
+        "#6495ED",
         "%"
       );
     })
