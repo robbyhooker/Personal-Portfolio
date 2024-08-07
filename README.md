@@ -1,3 +1,3 @@
 # Personal-Portfolio 
 
-This is the repo for my personal website, the goal is for it to be continuously updated as the website grows!
+This is the repo for my personal website: [link](https://robbyhooker.github.io/Personal-Portfolio/frontend/index.html)
