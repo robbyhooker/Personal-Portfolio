@@ -254,7 +254,7 @@ const posts = {
   },
   post8: {
     id: 8,
-    title: "Inspiration from Alexander the Great",
+    title: "Alexander the Great",
     synopsis: "They just don't make them like him anymore!",
     author: "Robert Hooker",
     date: "July 15, 2024",
