@@ -297,7 +297,7 @@ document.addEventListener("DOMContentLoaded", function () {
   d3.json("https://seal-app-scm6d.ondigitalocean.app/api/inflation")
     .then((data) => {
       const parsedData = data.map((d) => ({
-        date: new Date(d.date),
+        date: new parseDateUTC(d.date),
         value: +d.value,
       }));
       createLineChart(
@@ -313,7 +313,7 @@ document.addEventListener("DOMContentLoaded", function () {
   d3.json("https://seal-app-scm6d.ondigitalocean.app/api/interest-rates")
     .then((data) => {
       const parsedData = data.map((d) => ({
-        date: new Date(d.date),
+        date: new parseDateUTC(d.date),
         value: +d.value,
       }));
       createLineChart(
@@ -329,7 +329,7 @@ document.addEventListener("DOMContentLoaded", function () {
   d3.json("https://seal-app-scm6d.ondigitalocean.app/api/sp500")
     .then((data) => {
       const parsedData = data.map((d) => ({
-        date: new Date(d.date),
+        date: new parseDateUTC(d.date),
         value: +d.close,
       }));
       createLineChart(
@@ -345,7 +345,7 @@ document.addEventListener("DOMContentLoaded", function () {
   d3.json("https://seal-app-scm6d.ondigitalocean.app/api/exchange-rates")
     .then((data) => {
       const parsedData = data.map((d) => ({
-        date: new Date(d.date),
+        date: new parseDateUTC(d.date),
         value: +d.close,
       }));
       createLineChart(
