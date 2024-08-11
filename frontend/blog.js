@@ -108,7 +108,7 @@ const posts = {
     id: 4,
     title: "A People's History of the United States: Chapter Notes",
     synopsis:
-      "Howard Zinn had a polarizing stance on U.S. History, these notes are to help me understand his writing and outlook. A fascinating endeavor thus far.",
+      "Howard Zinn had a polarizing stance on U.S. History, these notes are to help me understand his writing and outlook.",
     author: "Robert Hooker",
     date: "Updated August 7, 2024",
     image: "bostonmass.jpg",
