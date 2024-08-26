@@ -330,7 +330,7 @@ h1 {
 .grid5 {
   grid-column: 3/5;
   grid-row: 3/5;
-  background-image: url('assets/keynes.jpg');
+  background-image: url('assets/swan.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
