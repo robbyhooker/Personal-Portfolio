@@ -308,23 +308,15 @@ const projects = {
         <h4>Expanding the Dataset</h4>
         <p>The current dataset spans from 2010-01-01 to 2023-01-01 and includes a diverse set of asset classes. Future work could involve:</p>
         <ul>
-            <li><strong>Incorporating More Securities</strong>: Including additional ETFs or individual stocks could provide a more granular view of the market.</li>
+            <li><strong>Incorporating More Securities</strong>: Including individual stocks could provide a more granular view of the market.</li>
             <li><strong>Extending the Time Frame</strong>: Analyzing a longer historical period could offer more insights into the performance of various optimization methods over different market cycles.</li>
-            <li><strong>Alternative Data Sources</strong>: Using alternative data, such as sentiment analysis from social media or macroeconomic indicators, could enhance the predictive power of the models.</li>
         </ul>
 
         <h4>Real-World Constraints</h4>
         <p>To make the portfolio optimization more applicable to real-world scenarios, future work should consider:</p>
         <ul>
             <li><strong>Transaction Costs</strong>: Including transaction costs and other fees in the optimization process to better simulate real trading environments.</li>
-            <li><strong>Regulatory Requirements</strong>: Adhering to regulatory constraints, such as diversification rules and leverage limits, which might affect institutional investors.</li>
-        </ul>
-        <h4>Application to Different Markets</h4>
-        <p>Applying the methods to different markets and asset classes can provide a broader perspective:</p>
-        <ul>
-            <li><strong>Global Markets</strong>: Expanding the analysis to include global markets and different asset classes such as emerging markets, commodities, and currencies.</li>
-            <li><strong>Sector-Specific Analysis</strong>: Performing sector-specific optimizations to understand how these methods work in different industry sectors.</li>
-            <li><strong>Alternative Investments</strong>: Including alternative investments such as private equity, hedge funds, and real estate in the portfolio optimization process.</li>
+            <li><strong>Regulatory Requirements</strong>: Adhering to regulatory constraints, such as diversification rules, which might affect institutional investors.</li>
         </ul>`,
     link: "https://github.com/robbyhooker/Portfolio_Optimization",
   },
