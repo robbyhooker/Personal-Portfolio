@@ -318,7 +318,7 @@ const projects = {
         <ul>
             <li><strong>Transaction Costs</strong>: Including transaction costs and other fees in the optimization process to better simulate real trading environments.</li>
             <li><strong>Regulatory Requirements</strong>: Adhering to regulatory constraints, such as diversification rules and leverage limits, which might affect institutional investors.</li>
-        </ul
+        </ul>
         <h4>Application to Different Markets</h4>
         <p>Applying the methods to different markets and asset classes can provide a broader perspective:</p>
         <ul>
