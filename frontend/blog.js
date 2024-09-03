@@ -110,7 +110,7 @@ const posts = {
     synopsis:
       "Howard Zinn had a polarizing stance on U.S. History, these notes are to help me understand his writing and outlook.",
     author: "Robert Hooker",
-    date: "Updated August 7, 2024",
+    date: "Updated September 3, 2024",
     image: "bostonmass.jpg",
     content: `
             <p class=p-header>Chapter 1: Columbus the Indians and Human Progress</p>
@@ -183,7 +183,10 @@ const posts = {
             <p>This chapter grapples with how war is used to keep populations in check and propaganda use. It also continues with the socialist theme. The US were tied to the allies in WW1 because of their purchasing of many military supplies from us. Once the Lusitania was sunk by the Germans, which carried men and weaponry, although the U.S. govt claimed it carried innocent cargo, the U.S. were officially on the side of the allies.</p>               <p>Zinn details how the war was said to raise revenue for American industry, which it did, but how much of that went to the people, and, was it worth the cost of war. Not only the cost of war but the opportunity for the government to suppress activist groups. The class wars still waged on at home, questioning the “free republic” in which they lived. These questions arose about the draft laws, which were needed to meet the U.S. soldier quota of 1,000,000, while only 73,000 volunteered.</p> 
             <p>The government found a new way to arrest the protesters, and did so in large numbers. The Espionage Act: “Whoever, when the United States is at war, shall willfully cause or attempt to cause insubordination, disloyalty, mutiny, or refusal of duty in the military or naval forces of the United States, or shall willfully obstruct the recruiting or enlistment service of the U.S”. This would prove useful in suppressing groups like the socialists and IWW, as they were protesting the war and the draft, and the authorities used the act loosely. The IWW got completely smashed, when the DOJ made raids on them all across the country, gathering evidence for a trial that would eventually arrest over 100 leaders, and amount to 2.5 million in fines.</p> 
             <p>So again the war ended, and U.S. government had drawn a line, that “certain kinds of resistance, could not be tolerated” Even with their suppression, the class wars would continue.</p> 
-
+            <p class="p-header">Chapter 15: Self Help in Hard Times</p>
+            <p>Zinn continues to detail the class separation and labor movements in the U.S., including the great depression. He takes apart the common notion that the “Roaring 20’s” were a prosperous period for America, noting that this was only true for the upper middle class. 40% of families could indulge in the new technology, but millions of poor still lacked the basic necessities. .1% of the families at the top received as much income as 42% of those at the bottom. Zinn also hints that this era was the beginning of consumerism in America, giving examples of the disease of more (paraphrasing).</p>
+            <p>Once the great depression began in 1929, political critics directly blamed capitalism, arguing that it was an undependable system. Caused by a fundamentally unsound economy and the stock market crash of 1929, the depression left ¼ to ⅓ of the labor force out of work. There were raids, protests, and strikes in the name of basic necessities for survival. In some cities like Seattle, there were general strikes basically shutting down the entire city, but the people created self help system where commoners could get food.</p>
+            <p>Following this, the new deal, along with WW2, helped pull the economy out of the tank. The new deal did not however change the class structure which had developed.</p>
             `,
   },
   post5: {
@@ -243,7 +246,7 @@ const posts = {
   },
   post7: {
     id: 7,
-    title: "1984 and The Individual",
+    title: "1984",
     synopsis:
       "George Orwell warns of totalitarianism and a loss of indivdualism, is it here?",
     author: "Robert Hooker",
