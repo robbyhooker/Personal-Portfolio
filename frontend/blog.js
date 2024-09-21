@@ -27,7 +27,7 @@ const posts = {
   },
   post2: {
     id: 2,
-    title: "Financialization of Housing",
+    title: "The Financialization of Housing",
     synopsis:
       "Juggling the economy, equality, and new grads paying $2k a month in NYC",
     author: "Robert Hooker",
@@ -316,6 +316,24 @@ const posts = {
 <p>Beyond the barbell strategy he outlines some steps one can take to ‘maximize their utility’ from black swans. First you need to understand and identify chance events that either have positive or negative impacts on your life, and from there, essentially, maximize your exposure to the good ones and minimize your exposure to the bad ones. You can do so by avoiding narrow mindedness and seeking out any opportunity that might lead to a large, chance impact on your life. To make this into simple examples, take to large events: a stock market crash, and meeting the love of your life. To avoid as much pain as possible from the market crash, I’ll diversify my investment portfolio, specifically, I’ll include assets with negative betas, like gold, for protection against the crash. To maximize my exposure to meeting the love of my life, I’ll simply take as many opportunities as possible which might lead to this, whether it be talking to the girl in front of me at starbucks, or agreeing to a blind date setup for me. How bad could it be!</p> 
         `,
   },
+  post10: {
+    id: 10,
+    title: "Intel's Re-establishment Opportunity",
+    synopsis:
+      "Once the king of the chip market, how can Intel carve its path back in the age of AI?",
+    author: "Robert Hooker",
+    date: "September 18, 2024",
+    image: "semiconduct.jpg",
+    content: `
+            <p>In recent months, Intel has released one of its worst financial reports in the company's history, with earnings per share down 84% year over year, at $0.02/share. This report was the quantitative representation of what many had already observed in the market, Intel had completely missed out on the AI chip boom to the likes of NVIDIA. What is true now does not have to remain true forever, and Intel still has an opportunity to capture a share of the remaining chip market growth. Through analyzing components of their business including product offering, customers, operations, and competitors, Intel should be able to regain a share of the market which they were once king of. Interestingly, it seems this process is already underway, as evidenced by their new multibillion-dollar deal to manufacture AI chips alongside AWS.</p>  
+            <p>This new chip manufacturing deal is exactly the direction the company should be looking to head in with its product offerings. In 2023, Intel's net revenue was $54.22 billion, of which 53.9% came from client computing (the chips sold for everyday user computing tasks), and only 28.6% from Data Centers and AI combined. This is a problem for Intel, as the Data Centers and AI market is both higher growth, and higher margin, and thus, is where Intel should shift its product focus towards.</p>
+            <p>In order to effectively capture more customers in the AI chip segment, Intel should focus on accessibility for all customer segments in the market. This includes big tech companies, other enterprises, and governments who need chips for large scale Data Centers and other AI infrastructure,  as well as AI startups who could benefit from a smaller, less expensive pay-as-you-go model. Through supporting these various segments, Intel should see an increase in their market share.</p>
+            <p>The good news for Intel is that their operating capabilities are not starting from ground zero. This company was once dominant in the chip market, and so they already have the experience and infrastructure to compete in a market that has a very high barrier to entry. Intel's recent investment in a new semiconductor manufacturing process called 18A, which it will use in its new partnership with AWS, is a step in the right direction. R&D and infrastructure investments of this nature are exactly what Intel needs to do to capture growth, and these should continue into the future.</p> 
+            <p>Finally, Intel should learn from their competitors, namely NVIDIA. NVIDIA, whose market capitalization is near $3 trillion as of 9/18/24, is the only evidence Intel needs to understand the strategy discussed is compelling. Their 2024 revenue was up 126% year on year, and has maintained ridiculous growth into their first two quarterly reports for 2025. Most notable for Intel to observe, in 2024 NVIDIA's Data Center and AI revenue made up 78% of their total, almost 3x what Intel's was in 2023! If Intel can more align themselves with this form of revenue model, they stand to rebound from their poor performance of late.</p> 
+            <p>To synthesize, Intel has a potentially enormous growth opportunity if they can emerge as a key player in the AI chip market. To do so they should shift their product focus, cater to multiple customer segments, leverage their existing expertise and infrastructure around chip manufacturing, and try to replicate the essence of their main competitor, NVIDIA, once again. These changes have the potential to turn the company around, re-establishing them as a force in technology.</p>
+            <p>Hopefully through my writing it is clear how passionate I am about the cross section between business and technology. This Intel case in particular is really compelling to me, as it could help a company achieve industry redefining growth, and it is immediately relevant to one of humanity's most ambitious projects, Artificial Intelligence.</p> 
+        `,
+  },
 };
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -329,8 +347,8 @@ document.addEventListener("DOMContentLoaded", () => {
             <h1>${post.title}</h1>
             <h3>${post.synopsis}</h3>
             <div class="author">By ${post.author}</div>
-            <div class="date">${post.date}</div>
             <img src="assets/${post.image}" alt="${post.title}" class="blog-image">
+            <div class="date">${post.date}</div>
             <div class="content">${post.content}</div>
         `;
   } else {
