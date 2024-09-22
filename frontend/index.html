@@ -28,6 +28,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.easycam.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet"
   <link rel="stylesheet" href="https://use.typekit.net/pwx4lgt.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
 
@@ -38,30 +39,35 @@
 </head>
 
 <body class="main">
-  <header>
-    <nav class="navbar">
-      <h3 class="nav-logo">R</h3>
-      <ul class="navbar-menu">
-        <li class="navbar-item"><a href="index.html">Home</a></li>
-        <li class="navbar-item"><a href="blog-list.html">Blog</a></li>
-        <li class="navbar-item"><a href="project-list.html">Projects</a></li>
-        <li class="navbar-item"><a href="resume.html">Resume</a></li>
-        <li class="navbar-item"><span class="fa-li"></span><a
-            href="https://www.linkedin.com/in/robert-hooker-19b27a259/ " target="_blank" rel="noopener noreferrer"><i
-              class="fa-brands fa-linkedin-in" style="color:#057af6;"></i></a></li>
-        <li class="navbar-item"><a href="https://github.com/robbyhooker" target="_blank" rel="noopener noreferrer"><i
-              class="fa-brands fa-github" style="color:#000000;"></i></a></li>
-      </ul>
-    </nav>
-  </header>
-  <div class="intro-section">
-    <p id="description">I'm Robert Hooker, a 22 year old<br>I enjoy learning, researching, and building<br>I have a BS in
-      Computer Science with a minor in Economics<br>Please check out my projects and blog to see what I've been up
-      to<br>I am interested in topics of large scope and scale<br>Thank you for visiting my website!</p>
-    <div id="p5-canvas"></div>
+  <div class="top-section" id="background-container">
+    <header>
+      <nav class="navbar">
+        <h3 class="nav-logo">R</h3>
+        <ul class="navbar-menu">
+          <li class="navbar-item-index"><a href="index.html">Home</a></li>
+          <li class="navbar-item-index"><a href="blog-list.html">Blog</a></li>
+          <li class="navbar-item-index"><a href="project-list.html">Projects</a></li>
+          <li class="navbar-item-index"><a href="resume.html">Resume</a></li>
+          <li class="navbar-item-index"><span class="fa-li"></span><a
+              href="https://www.linkedin.com/in/robert-hooker-19b27a259/ " target="_blank" rel="noopener noreferrer"><i
+                class="fa-brands fa-linkedin-in" style="color:#057af6;"></i></a></li>
+          <li class="navbar-item"><a href="https://github.com/robbyhooker" target="_blank" rel="noopener noreferrer"><i
+                class="fa-brands fa-github" style="color:#000000;"></i></a></li>
+        </ul>
+      </nav>
+    </header>
+      <p id="description">Hello! I'm Robert<br>I enjoy<br>
+        <span class="trigger active" onclick="handleClick(this, 'assets/chip2.jpg')">computers</span><br>
+        <span class="trigger" onclick="handleClick(this, 'assets/fuji.jpg')">design</span><br>
+        <span class="trigger" onclick="handleClick(this, 'assets/painting2.jpg')">economics</span><br>
+        <span class="trigger" onclick="handleClick(this, 'assets/glen.jpg')">and much more:)</span><br>thank you for visting my website!
+    </div>
   </div>
+  <div class="buffer"></div>
   <div class="projects-header" id="work">
-    <h2 class="lines">WORK</h2>
+  <div class="border-lines">
+    <h2 class="lines">Work</h2>
+  </div>
   </div>
   <div class="project-carousel">
     <div class="project-item" onclick="location.href='project_display.html?id=post1';">
@@ -90,8 +96,10 @@
     </div>
 
   </div>
-  <div class="blog-header" id="blog">
-    <h2 class="lines2">BLOG</h2>
+  <div class="projects-header" id="blog">
+    <div class="border-lines">
+      <h2 class="lines2">Blog</h2>
+    </div>
   </div>
   <div class="wrapper">
     <div class="grid1" onclick="location.href='blog-template.html?id=post1';">
@@ -144,11 +152,11 @@
     </div>
   </div>
 
-  <footer>
+  <!--<footer>
     <div class="footer-bottom">
       <p>2024 Robert Hooker</p>
     </div>
-  </footer>
+  </footer>-->
   <script src="script.js"></script>
   <script src="tile.js"></script>
 </body>
