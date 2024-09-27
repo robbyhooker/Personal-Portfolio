@@ -29,24 +29,24 @@ body {
   background-image: url(assets/chip2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center; /* Corrected from 'background-image: center;' */
-  overflow: hidden; /* Prevent scrollbars during zoom */
+  background-position: center;
+  overflow: hidden; 
   transition: background-image .2s ease-in;
 }
 
 .zoom-animation {
-  animation: zoomIn 5s ease forwards; /* Zoom animation */
+  animation: zoomIn 5s ease forwards;
   animation-delay: 1.5s;
 }
 
 @keyframes zoomIn {
   0% {
-    background-size: 100%; /* Start at normal size */
-    background-position: center center; /* Keep it centered */
+    background-size: 100%; 
+    background-position: center center; 
   }
   100% {
-    background-size: 105%; /* Zoomed-in background */
-    background-position: center center; /* Maintain center alignment */
+    background-size: 105%;
+    background-position: center center; 
   }
 }
 
@@ -58,7 +58,6 @@ body {
 .trigger:hover{
   color: var(--color-blue);
 }
-/* Make the currently clicked span red */
 .active {
   color: red;
 }
@@ -84,8 +83,8 @@ header {
   border-top: 0px solid var(--color-black);
   margin: 0;
   padding: 0;
-  background-color: rgba(243, 245, 240, 0); /* Fully transparent background */
-  transition: background-color 0.3s ease; /* Smooth transition */
+  background-color: rgba(243, 245, 240, 0); 
+  transition: background-color 0.3s ease; 
 }
 
 .top-section header:hover{
@@ -235,7 +234,6 @@ h1 {
   width: 100%;
   height: 675px;
   object-fit: cover;
-  /* Ensures the image covers the container */
   border-radius: 10px;
 }
 
@@ -280,33 +278,26 @@ h1 {
 
 .slick-dots {
   bottom: 10px;
-  /* Adjust the bottom position to move the dots up or down */
 }
 
 .slick-dots li {
   margin: 0 2px;
-  /* Decrease or increase the value to change spacing */
+
 }
 
 .slick-dots li button:before {
   font-size: 10px;
-  /* Adjust the size of the dots */
   color: #333;
-  /* Color of the dots */
   opacity: 0.5;
-  /* Initial opacity */
 }
 
 .slick-dots li.slick-active button:before {
   color: var(--color-green);
-  /* Color of the active dot */
   opacity: 1;
-  /* Opacity of the active dot */
 }
 
 .custom-modal .modal-dialog {
   max-width: 80%;
-  /* Set your desired width here */
   opacity: .90;
 }
 
@@ -726,10 +717,10 @@ footer {
 
 .dash-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns */
-  grid-template-rows: repeat(2, 1fr);    /* 2 rows */
+  grid-template-columns: repeat(3, 1fr); 
+  grid-template-rows: repeat(2, 1fr);    
   gap: 20px;
-  width: 100%;   /* Increased width to take up most of the page */
+  width: 100%;   
   margin: 0 auto;
 }
 
@@ -749,7 +740,7 @@ footer {
 
 svg {
   width: 95%;
-  height: 300px; /* Adjusted height for better visualization */
+  height: 300px; 
 }
 
 .indicators{
@@ -760,4 +751,9 @@ svg {
 .resume-container{
   width: 40%;
   font-family: "Times New Roman", Times, serif;
+}
+
+.preload-images {
+  display: none;
+  background-image: url('assets/chip2.jpg'), url('assets/fuji.jpg'), url('assets/painting.jpg'), url('assets/glen.jpg');
 }

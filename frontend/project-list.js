@@ -2,16 +2,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const blogList = document.getElementById("blog-list");
   const postsArray = Object.keys(projects).map((key) => projects[key]);
 
-  // Sort posts by date (latest first)
-  //postsArray.sort((a, b) => new Date(b.date) - new Date(a.date));
-
   postsArray.forEach((post) => {
     const postElement = document.createElement("div");
     postElement.classList.add("post");
 
     let projectUrl = `project_display.html?id=post${post.id}`;
     if (post.id === 4) {
-      // Special case for project 4
       projectUrl = "dashboard.html";
     }
 
