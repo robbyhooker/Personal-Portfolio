@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", function () {
       .attr("preserveAspectRatio", "xMidYMid meet")
       .attr("style", "max-width: 100%; height: auto;");
 
-    // Define the gradient
     const gradientId = `gradient-${selector.replace("#", "")}`;
     const defs = svg.append("defs");
     const gradient = defs
@@ -266,7 +265,6 @@ document.addEventListener("DOMContentLoaded", function () {
     );
   }
 
-  // Fetch and plot data for GDP as an example
   d3.json("https://seal-app-scm6d.ondigitalocean.app/api/gdp")
     .then((data) => {
       const parsedData = data.map((d) => ({
@@ -277,7 +275,6 @@ document.addEventListener("DOMContentLoaded", function () {
     })
     .catch((error) => console.error("Error loading data:", error));
 
-  // Repeat similar steps for other indicators using their respective API endpoints
   d3.json("https://seal-app-scm6d.ondigitalocean.app/api/unemployment")
     .then((data) => {
       const parsedData = data.map((d) => ({
