@@ -13,15 +13,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (post.id === 7) {
       // Special case for project 7
-      projectUrl = "e-commerce.html";
+      projectUrl =
+        "window.open('https://public.tableau.com/app/profile/robert.hooker/viz/MockE-CommerceReport/KPIDash', '_blank')";
+      postElement.innerHTML = `
+        <div class="blogs-wrapper" onclick="${projectUrl};">
+        <h3>${post.title}</h3>
+        <p>${post.synopsis}</p>
+        </div>
+    `;
+    } else {
+      postElement.innerHTML = `
+              <div class="blogs-wrapper" onclick="location.href='${projectUrl}';">
+              <h3>${post.title}</h3>
+              <p>${post.synopsis}</p>
+              </div>
+          `;
     }
-
-    postElement.innerHTML = `
-            <div class="blogs-wrapper" onclick="location.href='${projectUrl}';">
-            <h3>${post.title}</h3>
-            <p>${post.synopsis}</p>
-            </div>
-        `;
 
     blogList.appendChild(postElement);
   });
