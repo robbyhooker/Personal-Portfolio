@@ -15,6 +15,11 @@ document.addEventListener("DOMContentLoaded", () => {
       projectUrl = "dashboard.html";
     }
 
+    if (post.id === 7) {
+      // Special case for project 7
+      projectUrl = "e-commerce.html";
+    }
+
     postElement.innerHTML = `
             <div class="blogs-wrapper" onclick="location.href='${projectUrl}';">
             <h3>${post.title}</h3>

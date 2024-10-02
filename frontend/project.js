@@ -934,6 +934,14 @@ const projects = {
         `,
     link: "https://github.com/robbyhooker/Credit-Risk-Modeling",
   },
+  post7: {
+    id: 7,
+    title: "Mock E-Commerce Dashboard",
+    synopsis:
+      "Live interactive Tableau dahsboard with different metrics from e-commerce sales data",
+    content: "",
+    link: "",
+  },
 };
 
 document.addEventListener("DOMContentLoaded", () => {
