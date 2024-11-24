@@ -338,7 +338,7 @@ const posts = {
     id: 11,
     title: "Why do tech compaines become monopolies?",
     synopsis:
-      "Technology products and business can lend themselves to monopolies, which begs the question, why?",
+      "Technology products and businesses can lend themselves to monopolies, which begs the question, why?",
     author: "Robert Hooker",
     date: "November 20, 2024",
     image: "peices.jpg",
